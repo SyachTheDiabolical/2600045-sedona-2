@@ -2,6 +2,7 @@
 
 * Студент: [Сергей Валеев](https://up.htmlacademy.ru/htmlcss-individual/2/user/2600045).
 * Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
+* Сайт: [Мой проект Седона](https://syachthediabolical.github.io/2600045-sedona-2/)
 
 ---
 
