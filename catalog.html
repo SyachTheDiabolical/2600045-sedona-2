@@ -12,20 +12,20 @@
       <nav class="header-navigation">
         <ul class="header-navigation-list">
           <li class="header-navigation-item">
-            <a href="index.html" class="header-navigation-link">Главная</a>
+            <a href="#" class="header-navigation-link">Главная</a>
           </li>
           <li class="header-navigation-item">
-            <a href="#" class="header-navigation-link">О седоне</a>
+            <a href="#" class="header-navigation-link">О Седоне</a>
           </li>
-          <li class="header-navigation-item item-active">
+          <li class="header-navigation-item">
             <a href="catalog.html" class="header-navigation-link">Гостиницы</a>
           </li>
         </ul>
         <ul class="header-navigation-list user-navigation">
           <li class="header-navigation-item">
-            <a href="#" class="header-navigation-link">
+            <button class="button-search" type="submit">
               <span class="visually-hidden">Поиск</span>
-            </a>
+            </button>
           </li>
           <li class="header-navigation-item">
             <a href="#" class="header-navigation-link">
@@ -34,7 +34,7 @@
           </li>
           <li class="header-navigation-item">
             <a href="#" class="header-navigation-link">
-              <span class="visually-hidden">Добавить в избранное</span>
+              Хочу сюда!
             </a>
           </li>
         </ul>
@@ -43,16 +43,16 @@
 
     <main class="main-inner" data-test="main">
 
-      <section class="filter" data-test="filter">
         <h1 class="catalogue-h1">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="index.html"><span class="visually-hidden">Главная</span></a>
           </li>
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link">Каталог</a>
+            <a class="breadcrumbs-link">Гостиницы</a>
           </li>
         </ul>
+        <section class="filter" data-test="filter">
         <h2 class="visually-hidden">Список гостиниц Седоны с фильтрами</h2>
         <form class="catalogue-filter">
           <fieldset class="catalogue-filter-group">
@@ -102,8 +102,14 @@
           </fieldset>
           <fieldset class="catalogue-filter-price">
             <legend class="catalogue-filter-title">Стоимость, ₽:</legend>
-            <input class="catalogue-filter-price-input price-min" name="min-price" type="text" value="от">
-            <input class="catalogue-filter-price-input price-max" name="max-price" type="text" value="до">
+            <label>
+              От
+              <input class="catalogue-filter-price-input price-min" name="min-price" type="text" value="0">
+            </label>
+            <label>
+              До
+              <input class="catalogue-filter-price-input price-max" name="max-price" type="text" value="9000">
+            </label>
             <!-- slider -->
           </fieldset>
           <fieldset class="catalogue-filter-buttons">
@@ -117,19 +123,27 @@
       <section class="catalogue" data-test="catalog">
         <h2 class="catalogue-filter-results">Найдено гостиниц: 38</h2>
         <select class="select-control" aria-label="Сортировка">
-          <option value="popular">Сначала популярные</option>
-          <option value="cheap">Сначала дешевые</option>
-          <option value="expensive">Сначала дорогие</option>
+          <option value="popular">
+            <span class="visually-hidden">Сначала популярные</span>
+          </option>
+          <option value="cheap">
+            <span class="visually-hidden">Сначала дешевые</span>
+          </option>
+          <option value="expensive">
+            <span class="visually-hidden">Сначала дорогие</span>
+          </option>
         </select>
-        <a href="#" class="button-sort view-tile">
-          <span class="visually-hidden">Показать карточки</span>
-        </a>
-        <a href="#" class="button-sort view-full">
-          <span class="visually-hidden">Показать по одному</span>
-        </a>
-        <a href="#" class="button-sort view-list">
-          <span class="visually-hidden">Показать списком</span>
-        </a>
+        <div class="sort-buttons">
+          <a href="#" class="button-sort view-tile">
+            <span class="visually-hidden">Показать карточки</span>
+          </a>
+          <a href="#" class="button-sort view-full">
+            <span class="visually-hidden">Показать по одному</span>
+          </a>
+          <a href="#" class="button-sort view-list">
+            <span class="visually-hidden">Показать списком</span>
+          </a>
+        </div>
 
         <ul class="hotel-list">
           <li class="hotel-card">
@@ -141,6 +155,7 @@
             <button class="card-button button-favs" type="submit">В избранное</button>
             <p class="card-button hotel-rating">Рейтинг: 8,5</p>
             <img class="hotel-stars" src="#" alt="Четырёхзвёздочный отель">
+            <img class="hotel-card-photo" src="#" alt="Звёздное небо в расщелье гор">
           </li>
 
           <li class="hotel-card">
@@ -152,6 +167,7 @@
             <button class="card-button button-favs" type="submit">В избранное</button>
             <p class="card-button hotel-rating">Рейтинг: 9,2</p>
             <img class="hotel-stars" src="#" alt="Четырёхзвёздочный отель">
+            <img class="hotel-card-photo" src="#" alt="Саванна, радуга из гор">
           </li>
 
           <li class="hotel-card">
@@ -163,6 +179,7 @@
             <button class="card-button button-favs" type="submit">В избранное</button>
             <p class="card-button hotel-rating">Рейтинг: 6,9</p>
             <img class="hotel-stars" src="#" alt="Трёхзвёздочный отель">
+            <img class="hotel-card-photo" src="#" alt="Гора на фоне красивого неба">
           </li>
 
           <li class="hotel-card">
@@ -174,6 +191,7 @@
             <button class="card-button button-favs" type="submit">В избранное</button>
             <p class="card-button hotel-rating">Рейтинг: 5,0</p>
             <img class="hotel-stars" src="#" alt="Двухзвёздочный отель">
+            <img class="hotel-card-photo" src="#" alt="Нереальное фото горы на фоне звёздного неба">
           </li>
         </ul>
 
@@ -232,7 +250,7 @@
       </ul>
       <a class="phone" href="phone:+78128121212">+7 (812) 812-12-12</a>
       <a class="html-logo-link" href="#">
-        <img class="html-logo" src="" alt="HTML Academy">
+        <img class="html-logo" src="" alt="Логотип HTML Academy">
       </a>
     </footer>
 
