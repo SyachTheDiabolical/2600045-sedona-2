@@ -1,0 +1,119 @@
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/ptsans-400.woff2") format("woff2"),
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/ptsans-700.woff2") format("woff2"),
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+  background-color: #FFFFFF;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+  max-width: 1200px;
+
+}
+
+
+
+a {
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  display: inline-block;
+}
+
+
+
+/*______________________________________ */
+
+.advantages-cards {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 1200px;
+}
+
+.flex-card {
+  display:flex;
+  width: auto;
+}
+
+
+
+.advantage-card {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+
+
+.advantages-textblock {
+  width: 230px;
+  min-height:160px;
+  margin: 112.5px auto;
+  padding:0;
+}
+
+.advantages-textblock-main {
+  width: 230px;
+  min-height:160px;
+  margin: 102px auto;
+  padding:0;
+}
+
+.advantage-card-title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  width:175px;
+  margin: 0 auto ;
+  margin-bottom:62px;
+}
+
+.advantage-card-description {
+  font-size: 18px;
+  line-height: 21px;
+  margin:0;
+}
+
+
+.bg-full {
+  color: #ffffff;
+  background-color: rgba(131, 179, 211);
+}
+
+.bg-quater {
+  background-color: rgba(131, 179, 211, 0.12);
+  order: 0;
+}
+
+.bg-half {
+  background-color: rgba(131, 179, 211, 0.2);
+}
