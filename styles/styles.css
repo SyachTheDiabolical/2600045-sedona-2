@@ -754,12 +754,13 @@ h3.visually-hidden {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
+  text-transform: uppercase;
 }
 
 .select-control {
   margin-right: 70px;
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   padding-left: 20px;
   outline: 2px solid #E5E5E5;
   font-family: PT Sans;
@@ -769,6 +770,7 @@ h3.visually-hidden {
   width: 292px;
   justify-content: space-between;
   border-radius: 4px;
+  border-style: hidden;
 }
 
 
