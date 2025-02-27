@@ -797,7 +797,7 @@ h3.visually-hidden {
 }
 
 .button-sort-active {
-border-color: #000000;
+  outline-color: #000000;
 }
 
 .button-sort:last-child {
