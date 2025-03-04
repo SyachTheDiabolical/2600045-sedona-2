@@ -951,6 +951,15 @@ a {
   margin: 0;
 }
 
+.pagination-gap {
+  font-size: 22px;
+  line-height: 26px;
+  border-radius: 4px;
+  text-align: center;
+  padding:17px 0;
+  width:60px;
+}
+
 .pagination-link {
   font-weight: 700;
   font-size: 20px;
