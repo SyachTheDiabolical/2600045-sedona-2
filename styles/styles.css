@@ -279,9 +279,11 @@ a {
 /*          FEATURES        */
 .features {
   margin: 0;
+
 }
 
 .features-title {
+  width:505px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
